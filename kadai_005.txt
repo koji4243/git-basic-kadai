@@ -1,0 +1,61 @@
+C:\git_test\git_challenge> pwd
+
+Path
+----
+C:\git_test\git_challenge
+
+PS C:\git_test\git_challenge> git init     
+Initialized empty Git repository in C:/git_test/git_challenge/.git/
+PS C:\git_test\git_challenge> git stutas
+git: 'stutas' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+PS C:\git_test\git_challenge> git log   
+fatal: your current branch 'master' does not have any commits yet
+PS C:\git_test\git_challenge> git branch
+PS C:\git_test\git_challenge> git add hello_world.txt
+PS C:\git_test\git_challenge> git stutas
+git: 'stutas' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+PS C:\git_test\git_challenge> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.txt
+
+PS C:\git_test\git_challenge> git commit -m "1回目のコミット"
+[master (root-commit) cc5e196] 1回目のコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\git_test\git_challenge> git log --oneline
+cc5e196 (HEAD -> master) 1回目のコ
+PS C:\git_test\git_challenge> git status       
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+PS C:\git_test\git_challenge> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\git_test\git_challenge> git add .
+PS C:\git_test\git_challenge> git commit -m "2回目のコミット"
+[master 25d1604] 2回目のコミット
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\git_test\git_challenge> git log --oneline
+25d1604 (HEAD -> master) 2回目のコミット
+cc5e196 1回目のコミット
